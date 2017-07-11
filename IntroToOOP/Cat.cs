@@ -26,7 +26,10 @@ namespace IntroToOOP
             get { return this.name; }
             set { this.name = value; }
         }
-
+        public int Age
+        {
+            get { return this.age;  }            
+        }
 
 
         //We also have behaviors.
@@ -41,12 +44,17 @@ namespace IntroToOOP
             //This is an example of a default constructor.
             //A default constructor takes no arguments/parameters.
         }
+
+        //You can have as many constructors as you need as long as they each have
+        //a unique signature.  By signature, parameters in the parentheses after the 
+        //constructor name (the number and pattern).
         public Cat(string name, int age, string furColor)
         {
             this.name = name;
             this.age = age;
             this.furColor = furColor;
         }
+        //Overloading the constructor
         public void Eat()
         {
             if (isHungry)
