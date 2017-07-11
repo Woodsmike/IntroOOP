@@ -22,6 +22,17 @@ namespace IntroToOOP
             Random rName = new Random();
             Cat mittens = new Cat();
             mittens.Name = "Mittens";
+
+            Cat secondCat = new Cat("Oz", 3, "orange and white");
+            secondCat.Name = "Ozzy";
+            Console.WriteLine(secondCat.Name);
+            Console.WriteLine(secondCat.Age);
+            secondCat.Eat();
+
+            Dog spot = new Dog("long", 12, true);
+            Console.WriteLine(spot.HairLength);
+            spot.Potty();
+            spot.Run();
             //To create a new object, we use a special method called a CONSTRUCTOR  
             //Thinking about objects in real life, create 3 examples of objects.
             //Your objects should have five states (characteristics) and 5 behaviours.
