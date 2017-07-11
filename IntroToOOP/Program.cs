@@ -62,7 +62,25 @@ namespace IntroToOOP
             thirdHero.BattleNemesis();
             Console.WriteLine("Oh, no! Now my costume is " + thirdHero.Costume);
             Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);
-            
+
+            //access modifiers - How we control where a member (field, Property, Method, Constructor)
+            // of our class can be viewed.
+
+            //4 modifiers 
+            //Public - can be accessed from any class
+
+            //Private - can not be accessed from any other class
+
+            //Protected - can be accessed from the class it is in and all
+            //of that class's descendants
+
+            //Internal - can only be accessed by the same assembly.
+
+            BadGuys firstBadGuy = new BadGuys();
+
+            BadGuys secondBadGuy = new BadGuys();
+
+
         }
     }
 }
